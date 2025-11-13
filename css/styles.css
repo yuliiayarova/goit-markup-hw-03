@@ -164,7 +164,8 @@ img {
   gap: 40px;
 }
 
-.header-link {
+.menu-link {
+  display: inline-block;
   padding: 24px 0;
 }
 
