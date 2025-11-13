@@ -50,9 +50,8 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 0;
-  padding-right: 0;
+  width: 1158px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,11 +120,13 @@ img {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
-  border: transparent;
+  border: none;
   padding: 16px 32px;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
 }
 
 .button:hover,
@@ -135,26 +136,36 @@ img {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 24px 0;
   flex-basis: calc((100% - 332px) / 2);
-  border-bottom: 1px solid #e7e9fc;
+  align-items: center;
 }
 
 .header-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 76px;
   align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
 }
 
 .header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.header-link {
+  padding: 24px 0;
 }
 
 .header-address {
@@ -167,10 +178,7 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
-}
-
-.hero-container {
-  padding: 68px 0;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -189,9 +197,9 @@ img {
 
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   max-width: 1128px;
-  margin: 0 auto;
+  margin: 0 auto; */
   gap: 24px;
 }
 
@@ -233,12 +241,11 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
 }
 
 .team-card-content {
-  margin-top: 32px;
   text-align: center;
+  padding: 32px 0;
 }
 
 .team-card-title {
@@ -269,13 +276,13 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio-card-content {
   border: 1px solid #e7e9fc;
   border-top: 0;
-  padding: 32px 0;
-  padding-left: 16px;
+  padding: 32px 16px;
 }
 
 /* footer */
@@ -284,15 +291,12 @@ img {
   padding: 100px 0;
 }
 
-.footer-content {
-  max-width: 264px;
-  width: 100%;
-}
-
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
